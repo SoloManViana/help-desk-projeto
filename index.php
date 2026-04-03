@@ -1,4 +1,6 @@
-
+  <?php 
+       require_once('./validador_acesso.php');
+    ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -8,11 +10,9 @@
     <title>Aba Principal</title>
 </head>
 <body>
-    <nav>
-        <div class="navbar">
-            <img src="#" alt="logo">
-        </div>
-    </nav>
+    <?php 
+       require_once('./navbar.php');
+    ?>
     <main>
         <div class="container">
             <form action="./valida_login.php" method="post">

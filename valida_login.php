@@ -1,5 +1,6 @@
 <?php 
 
+session_start();
 
 $usuarios = array(
         array('id' => 1, 'email' => 'myadmin@mail.com', 'senha' => '1234'),
@@ -15,10 +16,12 @@ foreach($usuarios as $user){
 }
 
 if($usuario_auth){
+    $_SESSION['autenticado'] = "SIM";
     //echo "Usuario autenticado com sucesso.";
     header('Location: home.php');
 }
 else {
+    $_SESSION['autenticado'] = "NÃO";
     //echo "Ocorreu um erro durante a autenticação";
     header('Location: index.php?login=erro');
     exit;
