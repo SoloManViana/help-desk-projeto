@@ -9,16 +9,19 @@ $usuarios = array(
 $usuario_auth = false;
 
 foreach($usuarios as $user){
-    if($user['email'] == $_POST['mail'] && $user['senha'] == $_POST['pass']){
+    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['pass']){
         $usuario_auth = true;
     }
 }
 
 if($usuario_auth){
-    echo "Usuario autenticado com sucesso.";
+    //echo "Usuario autenticado com sucesso.";
+    header('Location: home.php');
 }
 else {
-    echo "Ocorreu um erro durante a autenticação";
+    //echo "Ocorreu um erro durante a autenticação";
+    header('Location: index.php?login=erro');
+    exit;
 }
 
 //echo "<pre>";
