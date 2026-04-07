@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('./assets/pexels-computer-1867758.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family:'Open Sans', sans-serif;
+
+}
+
+.container {
+    display: column;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    align-items: center;
+    
+    
+}
+input {
+    border-radius: 20px;
+    width: 200px;
+}
+
+.container-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22vh;
+    width: 300px;
+    height: 220px;
+    gap:20px;
+}
+
+.input {
+    height: 2rem;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 11px;
+    background-color: rgb(212, 212, 212);
+    border: none;
+}
+
+.login {
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form{
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    padding-left: 37%;
+    font-size: 2rem;
+}
+
+.btn-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    font-family:'Open Sans', sans-serif;
+    font-size: 1rem;
+    height: 2rem;
+    width: 100px;
+    border: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.logo {
+    width: 190px;
+}
+
+.nav-bar {
+    background-color: white;
+}
