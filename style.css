@@ -25,17 +25,31 @@ body {
 
 form {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
     border: 1px solid pink;
-    width: 380px;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 
 .container-boxes {
+    display: flex;
+    flex-direction: column;
     border: 1px solid blue;
+    height: 200px;
+    margin-top: 15px;
+    align-items: center;
+    gap: 20px;
 }
 
 input {
     border-radius: 20px;
     width: 200px;
+    
 }
 
 .input {
@@ -70,6 +84,10 @@ input {
     height: 2rem;
     width: 100px;
     border: none;
+}
+
+.botao {
+    background-color: rgb(37, 37, 37);
 }
 
 p {
