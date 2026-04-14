@@ -13,6 +13,25 @@ body {
     font-family:'Open Sans', sans-serif;
 }
 
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-danger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 229, 229);
+    width: 25%;
+    color: red;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.6rem;
+    margin: 0.3rem;
+}
 
 .container {
     display: flex;
@@ -20,7 +39,7 @@ body {
     border: 1px solid red;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 77vh;
 }
 
 form {
@@ -61,6 +80,76 @@ input {
     border: none;
 }
 
+.formu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: rgb(199, 199, 199);
+    width: 40vw;
+    height: 77vh;
+}
+
+.formulario {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 2vh;
+    width: 99%;
+    height: 99%;
+    padding: 9px;
+    border: 1px solid brown;
+}
+
+#list {
+    padding: 6px;
+}
+
+#back {
+    color: aliceblue;
+    font-weight: 600;
+    background-color: rgb(33, 100, 155);
+}
+
+.opt {
+    padding: 8px;
+}
+
+.title {
+    width: 100%;
+    height: 4vh;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.desc {
+    width: 100%;
+    height: 4vh;
+    padding: 6px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+.btn-form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+
+.back-form {
+    font-family:'Open Sans', sans-serif;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 16vw;
+    padding: 6px;
+    border: none;
+    outline: none;
+}
+
 .login {
     display:flex;
     flex-direction: column;
@@ -88,6 +177,7 @@ input {
 
 .botao {
     background-color: rgb(37, 37, 37);
+    color: white;
 }
 
 p {
@@ -95,7 +185,7 @@ p {
 }
 
 .nav-bar {
-    padding: 20px;
+    padding: 15px;
 }
 
 .logo {
@@ -104,4 +194,40 @@ p {
 
 .nav-bar {
     background-color: white;
+}
+
+.call{
+    width: 110px;
+}
+
+.chamados {
+    display: flex;
+    gap: 2rem;
+}
+
+.call-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    width: 210px;
+    height: 250px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.call-list p {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.desc {
+    width: 500px;
+    height: 80px;
+    resize: none;
+}
+
+li {
+    list-style: none;
 }

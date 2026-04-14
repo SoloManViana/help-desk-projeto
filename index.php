@@ -14,15 +14,17 @@
     <?php 
        require_once('./navbar.php');
     ?>
+    <div class="status">
+      <div class="text-danger">
+            Usuário ou senha inválido(s).
+        </div>
+    </div>
     <main>
         <div class="container">
             <form action="./valida_login.php" method="post">
 
             <?php if(isset($_GET['login']) && $_GET['login']== "erro"): ?>
                         <?php http_response_code(404); ?>
-                    <div class="text-danger">
-                        Usuário ou senha inválido(s).
-                    </div>
             <?php endif; ?>
 
                 <p class="titulo">Login</p>

@@ -13,5 +13,14 @@
     <?php 
        require_once('./navbar.php');
     ?>
+    <?php 
+    echo "<pre>";
+    print_r($_POST);
+    echo "</pre>";
+
+    $titulo = str_replace('#', '-', $_POST['titulo']);
+    $categoria = str_replace('#', '-', $_POST['categoria']);
+    $descrição = str_replace('#', '-', $_POST['descricao']);
+    ?>
 </body>
 </html>
